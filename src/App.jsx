@@ -19,7 +19,7 @@ import { Helmet } from "react-helmet";
 import CtaWithTheme from "./components/ui/CtaWithTheme";
 import ScrollText from "./components/ui/ScrollText";
 import DesignStareScroll from "./components/ui/DesignStareScroll";
-
+import Stackcard from "./pages/Home/Stackcard";
 function App() {
   const [ctaOpen, setCtaOpen] = useState(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -48,11 +48,7 @@ function App() {
           content="Flexirl Creative Agency offers innovative design solutions, product development, digital marketing, and video motion graphics. Spark your brand's imaginative flair with our expert team of designers and developers."
         />
       </Helmet>
-      {isDesktop && (
-        <StyledFixedNavigation
-          onOpenCta={openCta}
-        />
-      )}
+      {isDesktop && <StyledFixedNavigation onOpenCta={openCta} />}
 
       <main className="w-full overflow-x-hidden bg-[#ffff]">
         <div className="overflow-x-hidden-">
@@ -76,6 +72,7 @@ function App() {
           {/* Services */}
           <div id="services">
             <ServicesSection />
+
             <ScrollText />
           </div>
 

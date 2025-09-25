@@ -53,6 +53,8 @@ const ServicesSection = () => {
           </div>
         </div>
 
+        <Stackcard />
+
         {/* Services cards grid */}
         {/* <div className="flex flex-col gap-6 mt-8 lg:max-h-[640px] lg:overflow-y-auto lg:snap-y lg:snap-mandatory">
           <div className="snap-start bg-[#183942] text-white rounded-2xl p-6 sm:p-8 md:p-10">
@@ -97,7 +99,6 @@ const ServicesSection = () => {
         </div> */}
       </div>
 
-      <Stackcard />
       {/* <DesignStareScroll /> */}
     </section>
   );
