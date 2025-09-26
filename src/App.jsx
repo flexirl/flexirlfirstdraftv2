@@ -20,6 +20,7 @@ import CtaWithTheme from "./components/ui/CtaWithTheme";
 import ScrollText from "./components/ui/ScrollText";
 import DesignStareScroll from "./components/ui/DesignStareScroll";
 import Stackcard from "./pages/Home/Stackcard";
+
 function App() {
   const [ctaOpen, setCtaOpen] = useState(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
